@@ -1,4 +1,6 @@
-# R1-Reasoning
+# R1-Reasoning 
+Ongoing Spring Project with ACM AI 
+
 After importing the libraries and loading the dataset, I began experimenting with the peft model training cell. First, I created the peft_config, which sets the parameters of the model. I noticed that the r = 8 corresponds to the # of trainable parameters (basically the “rank” of the peft model), because when I set r = 4, this number halved.
 
 Then, I initially set up the SFTTrainer’s config with the following parameters: max_seq_length=100, per_device_train_batch_size=4, learning_rate=2e-4, num_train_epochs=3, finishing with a training loss of ~1.83 after ~3000 steps.
